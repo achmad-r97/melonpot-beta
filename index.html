@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MELONPOT Beta — RaptyPlay</title>
+<meta name="description" content="Join the MELONPOT closed beta on Android: a one-thumb fruit-merge roguelite by RaptyPlay. Three steps, about a minute.">
+<meta property="og:title" content="MELONPOT Beta — join the Android closed test">
+<meta property="og:description" content="Merge fruit. Chase the golden melon. Play MELONPOT before launch.">
+<meta property="og:image" content="https://achmad-r97.github.io/melonpot-beta/icon.png">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #f5ebd2;
+    --panel: #fffaf0;
+    --ink: #3a2416;
+    --muted: #6b5340;
+    --gold: #c8922a;
+    --btn: #3a2416;
+    --btn-ink: #fffaf0;
+    --line: #e3d4b4;
+    --done: #4f8a3c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1d130c;
+      --panel: #2a1c12;
+      --ink: #f5ebd2;
+      --muted: #c2ab92;
+      --gold: #f7c73c;
+      --btn: #f7c73c;
+      --btn-ink: #2a1c12;
+      --line: #46301e;
+      --done: #8fcf6f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2rem 1rem 3rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", "Noto Sans JP", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 32rem; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 1.5rem; }
+  header img { width: 96px; height: 96px; border-radius: 22px; }
+  h1 { margin: .5rem 0 .25rem; font-size: 1.8rem; letter-spacing: .02em; }
+  .tag { margin: 0; color: var(--muted); }
+  .langs { display: flex; justify-content: center; gap: .4rem; margin: 1rem 0 0; }
+  .langs button {
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+    border-radius: 999px; padding: .25rem .8rem; font: inherit; font-size: .85rem; cursor: pointer;
+  }
+  .langs button[aria-pressed="true"] { border-color: var(--gold); color: var(--gold); font-weight: 600; }
+  .warn {
+    background: var(--panel); border: 1px solid var(--gold); border-radius: 12px;
+    padding: .8rem 1rem; margin: 0 0 1rem; font-size: .95rem;
+  }
+  ol { list-style: none; padding: 0; margin: 0; counter-reset: step; }
+  li {
+    counter-increment: step;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 1rem 1rem 1.1rem 3.4rem; margin-bottom: .8rem; position: relative;
+  }
+  li::before {
+    content: counter(step);
+    position: absolute; left: 1rem; top: 1rem;
+    width: 1.7rem; height: 1.7rem; border-radius: 50%;
+    background: var(--gold); color: #2a1c12; font-weight: 700;
+    display: grid; place-items: center; font-size: .95rem;
+  }
+  li.done::before { content: "✓"; background: var(--done); color: #fff; }
+  h2 { margin: 0 0 .2rem; font-size: 1.05rem; }
+  li p { margin: 0 0 .7rem; color: var(--muted); font-size: .93rem; }
+  a.btn {
+    display: inline-block; background: var(--btn); color: var(--btn-ink);
+    text-decoration: none; font-weight: 600; border-radius: 10px; padding: .6rem 1rem;
+  }
+  a.btn:focus-visible, .langs button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .note { color: var(--muted); font-size: .85rem; margin-top: 1.25rem; }
+  .note a, footer a { color: var(--gold); }
+  footer { text-align: center; color: var(--muted); font-size: .8rem; margin-top: 2rem; }
+  [data-l] { display: none; }
+  html[lang="en"] [data-l="en"], html[lang="id"] [data-l="id"], html[lang="ja"] [data-l="ja"] { display: revert; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="MELONPOT golden melon icon" width="96" height="96">
+    <h1>MELONPOT Beta</h1>
+    <p class="tag">
+      <span data-l="en">Merge fruit. Chase the golden melon. Android closed beta.</span>
+      <span data-l="id">Gabungkan buah, kejar melon emas. Beta tertutup Android.</span>
+      <span data-l="ja">フルーツを合体して黄金メロンをねらえ。Android クローズドβ。</span>
+    </p>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-set="en">English</button>
+      <button type="button" data-set="id">Indonesia</button>
+      <button type="button" data-set="ja">日本語</button>
+    </div>
+  </header>
+
+  <div class="warn">
+    <span data-l="en">⚠️ Use the <b>same Google account as the Play Store on your Android phone</b> for every step. Easiest: open this page on that phone.</span>
+    <span data-l="id">⚠️ Pakai <b>akun Google yang sama dengan Play Store di HP Android kamu</b> untuk semua langkah. Paling gampang: buka halaman ini di HP itu.</span>
+    <span data-l="ja">⚠️ すべての手順で、<b>Android スマホの Play ストアと同じ Google アカウント</b>を使ってください。そのスマホでこのページを開くのが一番かんたんです。</span>
+  </div>
+
+  <ol>
+    <li id="s1">
+      <h2>
+        <span data-l="en">Join the tester group</span>
+        <span data-l="id">Gabung grup tester</span>
+        <span data-l="ja">テスターグループに参加</span>
+      </h2>
+      <p>
+        <span data-l="en">Opens Google Groups — tap <b>Join group</b>. No emails will be spammed.</span>
+        <span data-l="id">Membuka Google Groups — ketuk <b>Join group</b>. Tidak akan dikirimi spam.</span>
+        <span data-l="ja">Google グループが開きます。<b>グループに参加</b>をタップ。迷惑メールは送りません。</span>
+      </p>
+      <a class="btn" data-step="s1" target="_blank" rel="noopener" href="https://groups.google.com/g/melonpot-testers">
+        <span data-l="en">Join group</span><span data-l="id">Gabung grup</span><span data-l="ja">グループに参加</span>
+      </a>
+    </li>
+    <li id="s2">
+      <h2>
+        <span data-l="en">Become a tester</span>
+        <span data-l="id">Jadi tester</span>
+        <span data-l="ja">テスターになる</span>
+      </h2>
+      <p>
+        <span data-l="en">Tap <b>Become a tester</b> on the Google Play page. If it says the app isn't available, wait a few minutes after step 1 and refresh.</span>
+        <span data-l="id">Ketuk <b>Become a tester</b> di halaman Google Play. Kalau muncul "tidak tersedia", tunggu beberapa menit setelah langkah 1 lalu muat ulang.</span>
+        <span data-l="ja">Google Play のページで<b>テスターになる</b>をタップ。「利用できません」と出たら、手順 1 から数分待って再読み込みしてください。</span>
+      </p>
+      <a class="btn" data-step="s2" target="_blank" rel="noopener" href="https://play.google.com/apps/testing/com.r4ptor.melonpot">
+        <span data-l="en">Become a tester</span><span data-l="id">Jadi tester</span><span data-l="ja">テスターになる</span>
+      </a>
+    </li>
+    <li id="s3">
+      <h2>
+        <span data-l="en">Install & play</span>
+        <span data-l="id">Install & main</span>
+        <span data-l="ja">インストールして遊ぶ</span>
+      </h2>
+      <p>
+        <span data-l="en">Install MELONPOT from Google Play. Please keep it installed for at least 14 days — it really helps a solo developer get the game released!</span>
+        <span data-l="id">Install MELONPOT dari Google Play. Mohon jangan di-uninstall minimal 14 hari — ini sangat membantu developer solo agar gamenya bisa rilis!</span>
+        <span data-l="ja">Google Play から MELONPOT をインストール。少なくとも 14 日間はアンインストールしないでください。個人開発者のリリースにとても役立ちます！</span>
+      </p>
+      <a class="btn" data-step="s3" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.r4ptor.melonpot">
+        <span data-l="en">Open Google Play</span><span data-l="id">Buka Google Play</span><span data-l="ja">Google Play を開く</span>
+      </a>
+    </li>
+  </ol>
+
+  <p class="note">
+    <span data-l="en">Stuck or have feedback? Email <a href="mailto:raptyplayofficial@gmail.com">raptyplayofficial@gmail.com</a> or DM <a href="https://www.instagram.com/raptyplay_official/">@raptyplay_official</a>. To leave the beta, use the "Leave the program" link on the step 2 page.</span>
+    <span data-l="id">Ada kendala atau masukan? Email <a href="mailto:raptyplayofficial@gmail.com">raptyplayofficial@gmail.com</a> atau DM <a href="https://www.instagram.com/raptyplay_official/">@raptyplay_official</a>. Untuk keluar dari beta, pakai link "Leave the program" di halaman langkah 2.</span>
+    <span data-l="ja">困ったときや感想は <a href="mailto:raptyplayofficial@gmail.com">raptyplayofficial@gmail.com</a> か <a href="https://www.instagram.com/raptyplay_official/">@raptyplay_official</a> の DM へ。ベータをやめるときは、手順 2 のページの「プログラムから退出」から。</span>
+  </p>
+
+  <footer>
+    © RaptyPlay · <a href="https://achmad-r97.github.io/melonpot-privacy/">Privacy</a>
+  </footer>
+</main>
+<script>
+  (function () {
+    var store = {
+      get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+      set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+    };
+    function setLang(l) {
+      document.documentElement.lang = l;
+      document.querySelectorAll(".langs button").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.dataset.set === l));
+      });
+      store.set("lang", l);
+    }
+    var nav = (navigator.language || "en").slice(0, 2).toLowerCase();
+    var start = store.get("lang") || ({ id: "id", ms: "id", ja: "ja" })[nav] || "en";
+    setLang(start);
+    document.querySelectorAll(".langs button").forEach(function (b) {
+      b.addEventListener("click", function () { setLang(b.dataset.set); });
+    });
+    // Tandai langkah yang sudah diklik (khusus browser ini)
+    document.querySelectorAll("a[data-step]").forEach(function (a) {
+      var id = a.dataset.step;
+      if (store.get("done-" + id)) document.getElementById(id).classList.add("done");
+      a.addEventListener("click", function () {
+        store.set("done-" + id, "1");
+        document.getElementById(id).classList.add("done");
+      });
+    });
+  })();
+</script>
+</body>
+</html>
