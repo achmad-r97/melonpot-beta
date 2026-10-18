@@ -1,0 +1,21 @@
+{
+  "latest_code": 67,
+  "messages": [
+    {
+      "id": "welcome-beta-2026-10",
+      "date": "2026-10-18",
+      "title": {
+        "id": "Terima kasih, tester MELONPOT!",
+        "en": "Thank you, MELONPOT tester!",
+        "ja": "MELONPOTテスターの皆さん、ありがとう！"
+      },
+      "body": {
+        "id": "Kamu termasuk pemain pertama MELONPOT. Sebagai hadiah Founder, skin Melon Emas bermahkota sudah menunggu di Inventory. Update ini juga membawa tema latar (Senja & Malam), kotak surat ini, dan dukungan untuk HP Android lama. Ada saran atau bug? Kirim ke raptyplayofficial@gmail.com.",
+        "en": "You're one of MELONPOT's very first players. As a Founder reward, the crowned Gold Melon skin is waiting in your Inventory. This update also adds background themes (Sunset & Night), this mailbox, and support for older Android phones. Ideas or bugs? Send them to raptyplayofficial@gmail.com.",
+        "ja": "あなたはMELONPOTの最初のプレイヤーの一人です。Founder特典として、王冠のゴールドメロンスキンがインベントリで待っています。今回のアップデートでは背景テーマ（夕焼け・夜）、このメールボックス、古いAndroid端末への対応も追加されました。ご意見やバグ報告は raptyplayofficial@gmail.com まで。"
+      },
+      "url": "https://www.instagram.com/raptyplay_official/",
+      "url_label": {"id": "Instagram RaptyPlay", "en": "RaptyPlay on Instagram", "ja": "RaptyPlayのInstagram"}
+    }
+  ]
+}
