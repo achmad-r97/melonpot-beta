@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MELONPOT Beta — RaptyPlay</title>
-<meta name="description" content="Join the MELONPOT closed beta on Android: a one-thumb fruit-merge roguelite by RaptyPlay. Three steps, about a minute.">
-<meta property="og:title" content="MELONPOT Beta — join the Android closed test">
-<meta property="og:description" content="Merge fruit. Chase the golden melon. Play MELONPOT before launch.">
+<title>MELONPOT — RaptyPlay</title>
+<meta name="description" content="MELONPOT is out now on Google Play: a free, ad-free, one-thumb fruit-merge roguelite by RaptyPlay.">
+<meta property="og:title" content="MELONPOT — out now on Google Play">
+<meta property="og:description" content="Merge fruit. Chase the golden melon. Free, no ads, ever.">
 <meta property="og:image" content="https://achmad-r97.github.io/melonpot-beta/icon.png">
 <link rel="icon" href="icon.png">
 <style>
@@ -78,6 +78,9 @@
     text-decoration: none; font-weight: 600; border-radius: 10px; padding: .6rem 1rem;
   }
   a.btn:focus-visible, .langs button:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  .cta { text-align: center; margin: 0 0 1.25rem; }
+  a.btn.big { font-size: 1.15rem; padding: .85rem 1.6rem; border-radius: 14px; }
+  .feats { color: var(--muted); font-size: .9rem; margin: .7rem 0 0; }
   .note { color: var(--muted); font-size: .85rem; margin-top: 1.25rem; }
   .note a, footer a { color: var(--gold); }
   footer { text-align: center; color: var(--muted); font-size: .8rem; margin-top: 2rem; }
@@ -89,11 +92,11 @@
 <main>
   <header>
     <img src="icon.png" alt="MELONPOT golden melon icon" width="96" height="96">
-    <h1>MELONPOT Beta</h1>
+    <h1>MELONPOT</h1>
     <p class="tag">
-      <span data-l="en">Merge fruit. Chase the golden melon. Android closed beta.</span>
-      <span data-l="id">Gabungkan buah, kejar melon emas. Beta tertutup Android.</span>
-      <span data-l="ja">フルーツを合体して黄金メロンをねらえ。Android クローズドβ。</span>
+      <span data-l="en">Merge fruit. Chase the golden melon. Out now on Google Play!</span>
+      <span data-l="id">Gabungkan buah, kejar melon emas. Sudah rilis di Google Play!</span>
+      <span data-l="ja">フルーツを合体して黄金メロンをねらえ。Google Playで配信中！</span>
     </p>
     <div class="langs" role="group" aria-label="Language">
       <button type="button" data-set="en">English</button>
@@ -102,64 +105,32 @@
     </div>
   </header>
 
-  <div class="warn">
-    <span data-l="en">⚠️ Use the <b>same Google account as the Play Store on your Android phone</b> for every step. Easiest: open this page on that phone.</span>
-    <span data-l="id">⚠️ Pakai <b>akun Google yang sama dengan Play Store di HP Android kamu</b> untuk semua langkah. Paling gampang: buka halaman ini di HP itu.</span>
-    <span data-l="ja">⚠️ すべての手順で、<b>Android スマホの Play ストアと同じ Google アカウント</b>を使ってください。そのスマホでこのページを開くのが一番かんたんです。</span>
+  <div class="cta">
+    <a class="btn big" href="https://play.google.com/store/apps/details?id=com.r4ptor.melonpot">
+      <span data-l="en">Get it on Google Play</span><span data-l="id">Download di Google Play</span><span data-l="ja">Google Play で入手</span>
+    </a>
+    <p class="feats">
+      <span data-l="en">Free · No ads, ever · One-thumb play · English, Indonesia, 日本語</span>
+      <span data-l="id">Gratis · Tanpa iklan selamanya · Main satu jempol · English, Indonesia, 日本語</span>
+      <span data-l="ja">無料・広告なし・片手で遊べる・English / Indonesia / 日本語</span>
+    </p>
   </div>
 
-  <ol>
-    <li id="s1">
-      <h2>
-        <span data-l="en">Join the tester group</span>
-        <span data-l="id">Gabung grup tester</span>
-        <span data-l="ja">テスターグループに参加</span>
-      </h2>
-      <p>
-        <span data-l="en">Opens Google Groups — tap <b>Join group</b>. No emails will be spammed.</span>
-        <span data-l="id">Membuka Google Groups — ketuk <b>Join group</b>. Tidak akan dikirimi spam.</span>
-        <span data-l="ja">Google グループが開きます。<b>グループに参加</b>をタップ。迷惑メールは送りません。</span>
-      </p>
-      <a class="btn" data-step="s1" target="_blank" rel="noopener" href="https://groups.google.com/g/melonpot-testers">
-        <span data-l="en">Join group</span><span data-l="id">Gabung grup</span><span data-l="ja">グループに参加</span>
-      </a>
-    </li>
-    <li id="s2">
-      <h2>
-        <span data-l="en">Become a tester</span>
-        <span data-l="id">Jadi tester</span>
-        <span data-l="ja">テスターになる</span>
-      </h2>
-      <p>
-        <span data-l="en">Tap <b>Become a tester</b> on the Google Play page. If it says the app isn't available, wait a few minutes after step 1 and refresh.</span>
-        <span data-l="id">Ketuk <b>Become a tester</b> di halaman Google Play. Kalau muncul "tidak tersedia", tunggu beberapa menit setelah langkah 1 lalu muat ulang.</span>
-        <span data-l="ja">Google Play のページで<b>テスターになる</b>をタップ。「利用できません」と出たら、手順 1 から数分待って再読み込みしてください。</span>
-      </p>
-      <a class="btn" data-step="s2" target="_blank" rel="noopener" href="https://play.google.com/apps/testing/com.r4ptor.melonpot">
-        <span data-l="en">Become a tester</span><span data-l="id">Jadi tester</span><span data-l="ja">テスターになる</span>
-      </a>
-    </li>
-    <li id="s3">
-      <h2>
-        <span data-l="en">Install & play</span>
-        <span data-l="id">Install & main</span>
-        <span data-l="ja">インストールして遊ぶ</span>
-      </h2>
-      <p>
-        <span data-l="en">Install MELONPOT from Google Play. Please keep it installed for at least 14 days — it really helps a solo developer get the game released!</span>
-        <span data-l="id">Install MELONPOT dari Google Play. Mohon jangan di-uninstall minimal 14 hari — ini sangat membantu developer solo agar gamenya bisa rilis!</span>
-        <span data-l="ja">Google Play から MELONPOT をインストール。少なくとも 14 日間はアンインストールしないでください。個人開発者のリリースにとても役立ちます！</span>
-      </p>
-      <a class="btn" data-step="s3" target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.r4ptor.melonpot">
-        <span data-l="en">Open Google Play</span><span data-l="id">Buka Google Play</span><span data-l="ja">Google Play を開く</span>
-      </a>
-    </li>
-  </ol>
+  <div class="warn">
+    <b>
+      <span data-l="en">🍈 Beta testers: thank you!</span>
+      <span data-l="id">🍈 Para beta tester: terima kasih!</span>
+      <span data-l="ja">🍈 ベータテスターの皆さん、ありがとう！</span>
+    </b><br>
+    <span data-l="en">Just update the game from Google Play — no need to leave the program. Please <b>don't uninstall</b>: your Founder reward is saved on your phone. A permanent code tied to your Google account will be emailed to you later.</span>
+    <span data-l="id">Cukup update game-nya dari Google Play — tidak perlu keluar dari program. Mohon <b>jangan di-uninstall</b>: hadiah Founder tersimpan di HP kamu. Kode permanen yang terikat ke akun Google akan dikirim lewat email nanti.</span>
+    <span data-l="ja">Google Play からアップデートするだけでOK。プログラムを退出する必要はありません。Founder 特典は端末に保存されているので、<b>アンインストールしないでください</b>。Google アカウントにひもづく永久コードは後日メールでお送りします。</span>
+  </div>
 
   <p class="note">
-    <span data-l="en">Stuck or have feedback? Email <a href="mailto:raptyplayofficial@gmail.com">raptyplayofficial@gmail.com</a> or DM <a href="https://www.instagram.com/raptyplay_official/">@raptyplay_official</a>. To leave the beta, use the "Leave the program" link on the step 2 page.</span>
-    <span data-l="id">Ada kendala atau masukan? Email <a href="mailto:raptyplayofficial@gmail.com">raptyplayofficial@gmail.com</a> atau DM <a href="https://www.instagram.com/raptyplay_official/">@raptyplay_official</a>. Untuk keluar dari beta, pakai link "Leave the program" di halaman langkah 2.</span>
-    <span data-l="ja">困ったときや感想は <a href="mailto:raptyplayofficial@gmail.com">raptyplayofficial@gmail.com</a> か <a href="https://www.instagram.com/raptyplay_official/">@raptyplay_official</a> の DM へ。ベータをやめるときは、手順 2 のページの「プログラムから退出」から。</span>
+    <span data-l="en">Stuck or have feedback? Email <a href="mailto:raptyplayofficial@gmail.com">raptyplayofficial@gmail.com</a> or DM <a href="https://www.instagram.com/raptyplay_official/">@raptyplay_official</a>.</span>
+    <span data-l="id">Ada kendala atau masukan? Email <a href="mailto:raptyplayofficial@gmail.com">raptyplayofficial@gmail.com</a> atau DM <a href="https://www.instagram.com/raptyplay_official/">@raptyplay_official</a>.</span>
+    <span data-l="ja">困ったときや感想は <a href="mailto:raptyplayofficial@gmail.com">raptyplayofficial@gmail.com</a> か <a href="https://www.instagram.com/raptyplay_official/">@raptyplay_official</a> の DM へ。</span>
   </p>
 
   <footer>
